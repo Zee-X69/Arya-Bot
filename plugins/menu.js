@@ -1,10 +1,10 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
   let preview = {}
   try {
-    if (!conn.menu) preview = await conn.generateLinkPreview('https://github.com/Arya274/Arya-Bot')
+    if (!conn.menu) preview = await conn.generateLinkPreview('https://github.com/Zee-X69')
   } catch (e) {
     try {
-      if (!conn.menu) preview = await global.conn.generateLinkPreview('https://github.com/Nurutomo/wabot-aq')
+      if (!conn.menu) preview = await global.conn.generateLinkPreview('https://github.com/Zee-X69')
     } catch (e) {}
   } finally {
     let exp = global.DATABASE.data.users[m.sender].exp
@@ -32,13 +32,14 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       .replace(/%week/g, week)
       .replace(/%date/g, date)
       .replace(/%time/g, time): `
-🤖 [NFQ BOT] 🤖
-Created Bye: @Drawl Nag
+🤖 [ZEE BOT] 🤖
+Created Bye: @ZEE-X
 
 Hi, ${name} 👋
+
 Exp: ${exp}
 
-📟 Waktu: ${time}
+📟 Waktu  : ${time}
 📆 Tanggal: ${week}, ${date}
 
 ${more.repeat(1000)}
@@ -99,18 +100,18 @@ Cara Tambah XP:
 ╠➥ ${_p}mutechat group
 ║
 ╠═〘 IKLAN 〙 ═
-╠➥ Instagram: @arpunchs
-╠➥ Github: https://github.com/Arya274/Arya-Bot
+╠➥ Instagram: @rizky_rmdn06
+╠➥ Github: https://github.com/Zee-X69
 ║
 ╠═〘 Info Bot 〙 ═
-╠➥ Name : NFQ BOT
-╠➥ Coded using *Nano* on Android \\w Termux
-╠➥ Request? Wa.me/6288235435804
+╠➥ Name : ZEE BOT
+
+Wa.me/6285607035686
 ╠═════
 ║ Advanced:
 ║  > return m
 ║
-╠═〘 NfQ BOT 〙═
+╠═〘 ZEE BOT 〙═
 `.trim()
     conn.reply(m.chat, {...preview, text}, m)
   }
